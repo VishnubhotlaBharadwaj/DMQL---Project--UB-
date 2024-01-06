@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+ <servlet>
+ <servlet-name>ins</servlet-name>
+ <servlet-class>Insert</servlet-class>
+ </servlet>
+ 
+ <servlet>
+ <servlet-name>checklogin</servlet-name>
+ <servlet-class>CheckLogin</servlet-class>
+ </servlet>
+ 
+ <servlet>
+ <servlet-name>searchOrder</servlet-name>
+ <servlet-class>Ordersearch</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>Update</servlet-name>
+ <servlet-class>Update</servlet-class>
+ </servlet>
+ <servlet>
+ <servlet-name>Delete</servlet-name>
+ <servlet-class>Delete</servlet-class>
+ </servlet>
+ 
+ <servlet-mapping>
+ <servlet-name>ins</servlet-name>
+ <url-pattern>/ins</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+ <servlet-name>checklogin</servlet-name>
+ <url-pattern>/checklogin</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet-mapping>
+ <servlet-name>searchOrder</servlet-name>
+ <url-pattern>/searchOrder</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ <servlet-name>Update</servlet-name>
+ <url-pattern>/upd</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ <servlet-name>Delete</servlet-name>
+ <url-pattern>/delete</url-pattern>
+ </servlet-mapping>
+</web-app>
